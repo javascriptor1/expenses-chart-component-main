@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Frontend Mentor | Expenses chart component</title>
 
@@ -25,17 +31,63 @@
       }
     </style>
   </head>
-  <body>
-    My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun Total
-    this month $478.33 +2.4% from last month
+  <body
+    class="grid place-content-center min-h-screen text-lg font-sans bg-Cream"
+  >
+    <main class="p-4 w-[360px] md:w-[550px]">
+      <!-- upper div here  -->
+      <div
+        class="flex bg-Softred rounded-lg py-5 px-6 justify-between max-w-[345px] md:max-w-[550px]"
+      >
+        <div class="flex flex-col text-Verypaleorange">
+          <h3 class="text-sm text-Cream font-bold">My balance</h3>
+          <p class="text-2xl font-bold">$921.48</p>
+        </div>
+        <svg
+          width="72"
+          height="48"
+          viewBox="0 0 72 48"
+          class="scale-[85%]"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <circle fill="#382314" cx="48" cy="24" r="24" />
+            <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+          </g>
+        </svg>
+      </div>
+      <!-- chart div here  -->
+      <div
+        class="bg-Verypaleorange rounded-lg max-w-[345px] md:max-w-[550px] mt-4 py-6 px-4 font-bold"
+      >
+        <h3 class="text-Darkbrown">Spending - Last 7 days</h3>
+
+        <div>
+          <canvas id="expense-chart"></canvas>
+        </div>
+
+        <hr class="m-5 w-full mx-auto" />
+        <div class="flex justify-between items-end">
+          <div class="flex flex-col gap-2">
+            <h4 class="text-Mediumbrown text-sm">Total this month</h4>
+            <p class="text-3xl">$478.33</p>
+          </div>
+          <div class="flex flex-col items-end">
+            <h4 class="text-Darkbrown text-base font-bold">+2.4%</h4>
+            <p class="text-Mediumbrown text-xs">from last month</p>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">MKF</a>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

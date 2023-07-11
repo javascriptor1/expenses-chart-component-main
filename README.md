@@ -1,6 +1,6 @@
 # Frontend Mentor - Expenses chart component solution
 
-This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -13,9 +13,6 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-
-
-
 
 ## Overview
 
@@ -33,10 +30,9 @@ Users should be able to:
 
 ![Solution](images/Frontend-Mentor-Expenses-chart-component.png)
 
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [ https://www.frontendmentor.io/solutions/expenses-chart-component-using-tailwindcss-and-chartjs-f9awsSIGXS ]
 - Live Site URL: [ https://expensess-chart-component-solution.netlify.app]
 
 ## My process
@@ -50,22 +46,16 @@ Users should be able to:
 - [Tailwindcss](https://https://tailwindcss.com/) - CSS Framework
 - [Chartjs](https://www.chartjs.org/)
 
-
-
 ### What I learned
 
 - Chart Js
 
-
-
-
 ### Useful resources
 
-- [Chart js tutorial Youtube Channel](https://www.youtube.com/@ChartJS-tutorials) - This helped me for customization of chartjs 
+- [Chart js tutorial Youtube Channel](https://www.youtube.com/@ChartJS-tutorials) - This helped me for customization of chartjs
 
 ## Author
 
 - Mohammed Fakih
 - Frontend Mentor - [@javascriptor1](https://www.frontendmentor.io/profile/javascriptor1)
 - Twitter - [@javascriptor1](https://www.twitter.com/javascriptor1)
-

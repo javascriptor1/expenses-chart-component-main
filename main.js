@@ -2,18 +2,6 @@
 
 const ctx = document.getElementById("expense-chart");
 
-/*
-  <!-- <div>mon</div>
-        <div>tue</div>
-        <div>wed</div>
-        <div>thu</div>
-        <div>fri</div>
-        <div>sat</div>
-        <div>sun</div> -->
-
-
-  */
-
 new Chart(ctx, {
   type: "bar",
 
@@ -35,10 +23,27 @@ new Chart(ctx, {
           "hsl(10, 79%, 65%)",
           "hsl(10, 79%, 65%)",
         ],
+        hoverBackgroundColor: [
+          "#ff9b87",
+          "#ff9b87",
+          "#b4dfe5",
+          "#ff9b87",
+          "#ff9b87",
+          "#ff9b87",
+          "#ff9b87",
+        ],
       },
     ],
   },
   options: {
+    onHover: (event, chartElement) => {
+      event.native.target.style.cursor = chartElement[0]
+        ? "pointer"
+        : "default";
+      event.native.target.style.backGroundColor = chartElement[0]
+        ? "blue"
+        : "green";
+    },
     scales: {
       y: {
         display: false,
@@ -61,6 +66,22 @@ new Chart(ctx, {
     plugins: {
       legend: {
         display: false,
+      },
+      tooltip: {
+        caretSize: 0,
+        displayColors: false,
+        callbacks: {
+          label: function (context) {
+            let label = context.dataset.label || "";
+            if (context.parsed.y !== null) {
+              label += new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD",
+              }).format(context.parsed.y);
+            }
+            return label;
+          },
+        },
       },
     },
   },

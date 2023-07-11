@@ -816,6 +816,10 @@ video {
   color: hsl(27 66% 92% / var(--tw-text-opacity));
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .md\:w-\[550px\] {
     width: 550px;
